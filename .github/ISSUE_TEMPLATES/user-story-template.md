@@ -1,21 +1,13 @@
----
-name: User Story
-about: Use this template to create a new user story
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**As a** [role]  
-**I need** [function]  
-**So that** [benefit]  
+**As a** customer  
+**I need** to create an account  
+**So that** I can track my orders and purchase history  
 
 ### Details and Assumptions
-* [document what you know]      
+    * The customer should be able to provide basic details like name, email, and shipping address.
+    * The account should be stored in a database for future access.
 
 ### Acceptance Criteria     
-```gherkin
-Given [some context]  
-When [certain action is taken]  
-Then [the outcome of action is observed]  
+    gherkin
+    Given I am a customer  
+    When I submit my details (name, email, address)  
+    Then my account should be created successfully, and I should receive a confirmation email.
